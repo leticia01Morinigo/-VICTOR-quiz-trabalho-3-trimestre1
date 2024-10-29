@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181818; /* Fundo escuro */
+    color: #FFFFFF; /* Texto em branco */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    background-color: #1c1c1c; /* Fundo da box escuro */
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgb(0, 0, 0, 0.1); /* Sombra */
+    padding: 50px; /* mexe no padding */
+    text-align: center;
+    max-width: 700px; /* mexe na largura */
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    margin: 10px 0;
+    padding: 15px 25px; /* Aumenta o tamanho dos botões */
+    border: none;
+    background-color: #292929; /* muda cor dos botoes */
+    color: #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #444444; /* Cor de hover um pouco mais clara */
+}
+
+#progress-container {
+    background-color: #292929; /* cor da barra de progresso */
+    height: 15px; /* Aumenta a altura da barra */
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#progress {
+    background-color: #FFFFFF; /* Cor para indicar progresso */
+    height: 15px;
+    width: 0;
+    border-radius: 5px;
+    transition: width 1s ease;
+}
+
+.answer-btn {
+    width: 100%;
+    margin: 10px 0; /* espaçamento entre botões */
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #2A2A2A; /* Cor do botão de resposta */
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.answer-btn.selected {
+    background-color: #FFFFFF; /* Fundo branco para resposta selecionada */
+    color: #000000; /* Texto preto para contraste */
+}
+
+.answer-btn.correct {
+    background-color: #1F8B24; /* Verde escuro para resposta correta */
+    color: #FFFFFF;
+}
+
+.answer-btn.incorrect {
+    background-color: #A12F2F; /* Vermelho escuro para resposta incorreta */
+    color: #FFFFFF;
+}
+
+/* Animações */
+.fade-out {
+    animation: fadeOut 0.7s forwards;
+}
+
+.fade-in {
+    animation: fadeIn 0.7s forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

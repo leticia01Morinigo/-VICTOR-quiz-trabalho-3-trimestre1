@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="welcome-screen" class="box">
+        <h1>Quiz Casos de Homicídio</h1>
+        <p>Você gosta de casos criminais e acha q sabe de tudo sobre? então esse quiz é perfeito pra você, teste o quanto sabe sobre esses acontecimentos terriveis que assombraram as pessoas da epoca.</p>
+        <button id="start-quiz-btn">Eu aceito isso!</button>
+        <button id="exit-btn">Não é pra mim</button>
+    </div>
+
+    <div id="exit-screen" class="box hidden">
+        <h1>Você tem certeza disso mesmo??</h1>
+        <p>Pare para pensar como seria a sociedade com esses maniacos livres caso os envolvidos do caso tivessem desistido de primeira. se eles conseguiram a força de vontade para continuar mesmo sem nada pra começar o caso você tambem consegue!</p>
+        <button id="back-btn">Eu mudei de ideia</button>
+    </div>
+
+    <div id="quiz-screen" class="box hidden">
+        <div id="progress-container">
+            <div id="progress"></div>
+        </div>
+        <h2 id="question-text"></h2>
+        <div id="answer-buttons">
+            <button class="answer-btn"></button>
+            <button class="answer-btn"></button>
+            <button class="answer-btn"></button>
+            <button class="answer-btn"></button>
+        </div>
+        <button id="submit-btn">Enviar Resposta</button>
+    </div>
+
+    <div id="result-screen" class="box hidden">
+        <h1>Resultado</h1>
+        <p id="result-text"></p>
+        <button id="retry-btn">Tentar novamente</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
